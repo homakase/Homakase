@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homakase - A Private Sushi Experience</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #FAF9F6;
+      font-family: 'Roboto', sans-serif;
+      color: #1a1a1a;
+      overflow-x: hidden;
+    }
+    header {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 50px;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #777;
+    }
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1604908177225-09be3d84ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      font-weight: 300;
+    }
+    .hero a {
+      margin-top: 35px;
+      padding: 15px 35px;
+      background-color: rgba(0,0,0,0.7);
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .hero a:hover {
+      background-color: rgba(0,0,0,0.9);
+      transform: scale(1.05);
+    }
+    section {
+      padding: 100px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #444;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section-img {
+      margin-top: 50px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+    .section-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .menu {
+      margin-top: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .menu-item {
+      background: #fff;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      flex: 1 1 250px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+    .menu-item img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    form {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input, textarea, button {
+      padding: 15px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #000;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+    button:hover {
+      background-color: #333;
+      transform: translateY(-2px);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      padding: 30px 20px;
+      margin-top: 80px;
+      background: #fff;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>Homakase</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#reservation">Reservation</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Homakase</h1>
+  <p>A Private Sushi Experience</p>
+  <a href="#reservation">Reserve Now</a>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Homakase brings authentic, handcrafted sushi to your home. Our master chefs curate personalized experiences to transform any gathering into an unforgettable celebration of taste and tradition.</p>
+  <div class="section-img">
+    <img src="https://images.unsplash.com/photo-1579583760058-3a80bd84e8e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Chef preparing sushi">
+  </div>
+</section>
+
+<section id="menu">
+  <h2>Menu Highlights</h2>
+  <div class="menu">
+    <div class="menu-item"><img src="https://img.icons8.com/ios-filled/50/nigiri.png"/><div>Omakase Nigiri</div></div>
+    <div class="menu-item"><img src="https://img.icons8.com/ios-filled/50/sashimi.png"/><div>Seasonal Sashimi</div></div>
+    <div class="menu-item"><img src="https://img.icons8.com/ios-filled/50/sushi-roll.png"/><div>Signature Rolls</div></div>
+    <div class="menu-item"><img src="https://img.icons8.com/ios-filled/50/steak.png"/><div>Premium Wagyu</div></div>
+    <div class="menu-item"><img src="https://img.icons8.com/ios-filled/50/sea-urchin.png"/><div>Uni & Toro Specials</div></div>
+    <div class="menu-item"><img src="https://img.icons8.com/ios-filled/50/wine-bottle.png"/><div>Optional Wine Pairings</div></div>
+  </div>
+</section>
+
+<section id="reservation">
+  <h2>Reservation</h2>
+  <p>Reserve your private dining experience with Homakase. Limited dates available.</p>
+  <div class="section-img">
+    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Private dining environment">
+  </div>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="date" placeholder="Preferred Date & Time" required>
+    <input type="text" name="location" placeholder="Event Location" required>
+    <input type="number" name="guests" placeholder="Number of Guests" required>
+    <textarea name="message" rows="4" placeholder="Special Requests"></textarea>
+    <button type="submit">Submit Reservation</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:homakase2025@gmail.com">homakase2025@gmail.com</a></p>
+  <p>Phone: <a href="tel:6037108577">(603) 710-8577</a></p>
+  <p>Instagram: @homakase</p>
+</section>
+
+<footer>
+  <p>Crafted with precision. Served with soul.</p>
+  <p>&copy; 2025 Homakase | All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
